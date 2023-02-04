@@ -73,8 +73,8 @@ int main()
 			{
 				app.close();
 			}
-
-			if (Keyboard::isKeyPressed(Keyboard::Right)) p->angle += 3;
+		}
+		if (Keyboard::isKeyPressed(Keyboard::Right)) p->angle += 3;
 			if (Keyboard::isKeyPressed(Keyboard::Left))  p->angle -= 3;
 			if (Keyboard::isKeyPressed(Keyboard::Up)) p->thrust = true;
 			else p->thrust = false;
@@ -170,7 +170,6 @@ int main()
 				i->draw(app);
 			}
 			app.display();
-		}
 	}
 
 	return 0;
